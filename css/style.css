@@ -192,9 +192,9 @@ body {
     cursor: pointer;
     pointer-events: auto;}
 
-.marker.bench {
-    background: url("img-pins/Bench.png") no-repeat center;
-    background-size: contain;}
+.marker.transport {
+    background: url("../img-pins/Map_Pin_Stag.webp") no-repeat center;
+}
 
 .marker.transport {
     background: url("img-pins/Map_Pin_Stag.webp") no-repeat center;
