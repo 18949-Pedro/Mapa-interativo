@@ -11,7 +11,7 @@
 
 <!-- Menu Toggle Button -->
 <button class="menu-toggle" onclick="toggleMenu()">
-    <img src="img/icone-marcador.png" alt="Menu">
+    <img src="img/menu-icon.png" alt="Menu">
 </button>
 
 <!-- Side Panel Menu -->
@@ -80,7 +80,7 @@
                     <div class="map-item-name">Habilidades</div>
                 </div>
                 <div class="map-item" onclick="toggleLayer('nail_art_Layer', this)">
-                    <div class="map-item-icon" style="background-image: url('img-pins/Cyclone_Slash.webp');"></div>
+                    <div class="map-item-icon" style="background-image: url('img-pins/nail-art-icon.png');"></div>
                     <div class="map-item-name">Artes do Ferrão</div>
                 </div>
             </div>
@@ -90,15 +90,15 @@
             <div class="category-title">Itens</div>
             <div class="items-grid">
                 <div class="map-item" onclick="toggleLayer('key_Layer', this)">
-                    <div class="map-item-icon" style="background-image: url('img-pins/Elegant_Key.webp');"></div>
+                    <div class="map-item-icon" style="background-image: url('img-pins/key-icon.png');"></div>
                     <div class="map-item-name">Chaves</div>
                 </div>
                 <div class="map-item" onclick="toggleLayer('relic_Layer', this)">
-                    <div class="map-item-icon" style="background-image: url('img-pins/Arcane_Egg.webp');"></div>
+                    <div class="map-item-icon" style="background-image: url('img-pins/relic-icon.png');"></div>
                     <div class="map-item-name">Relíquias</div>
                 </div>
                 <div class="map-item" onclick="toggleLayer('grub_Layer', this)">
-                    <div class="map-item-icon" style="background-image: url('img-pins/Map_Pin_Grub.webp');"></div>
+                    <div class="map-item-icon" style="background-image: url('img-pins/grub-icon.png');"></div>
                     <div class="map-item-name">Grubs</div>
                 </div>
             </div>
@@ -147,7 +147,7 @@
                     <div class="map-item-name">Bell Ways</div>
                 </div>
                 <div class="map-item" onclick="toggleLayer('ss_memory_locket_Layer', this)">
-                    <div class="map-item-icon" style="background-image: url('img/Silksong/Vida Seda/Memory_Locket.png');"></div>
+                    <div class="map-item-icon" style="background-image: url('img-pins/ss-memory-icon.png');"></div>
                     <div class="map-item-name">Memory Locket</div>
                 </div>
             </div>
@@ -157,16 +157,16 @@
             <div class="category-title">Recursos & Vida</div>
             <div class="items-grid">
                 <div class="map-item" onclick="toggleLayer('ss_spool_fragment_Layer', this)">
-                    <div class="map-item-icon" style="background-image: url('img/Silksong/Vida Seda/Spool_Fragment.png');"></div>
+                    <div class="map-item-icon" style="background-image: url('img-pins/ss-spool-icon.png');"></div>
                     <div class="map-item-name">Spool Fragment</div>
                 </div>
-                <div class="map-item" onclick="toggleLayer('ss_mask_fragment_Layer', this)">
-                    <div class="map-item-icon" style="background-image: url('img/Silksong/Vida Seda/Mask_Shard_(Silksong).png.png');"></div>
-                    <div class="map-item-name">Fragmento de mascara</div>
-                </div>
                 <div class="map-item" onclick="toggleLayer('ss_lost_flea_Layer', this)">
-                    <div class="map-item-icon" style="background-image: url('img/Silksong/Vida Seda/Map_Pin_Flea.png');"></div>
+                    <div class="map-item-icon" style="background-image: url('img-pins/ss-flea-icon.png');"></div>
                     <div class="map-item-name">Lost Flea</div>
+                </div>
+                <div class="map-item" onclick="toggleLayer('ss_shard_bundle_Layer', this)">
+                    <div class="map-item-icon" style="background-image: url('img-pins/ss-shard-icon.png');"></div>
+                    <div class="map-item-name">Shard Bundle</div>
                 </div>
             </div>
         </div>
@@ -174,10 +174,31 @@
         <div class="category-section">
             <div class="category-title">Itens Especiais</div>
             <div class="items-grid">
+                <div class="map-item" onclick="toggleLayer('ss_wish_Layer', this)">
+                    <div class="map-item-icon" style="background-image: url('img-pins/ss-wish-icon.png');"></div>
+                    <div class="map-item-name">Wish</div>
                 </div>
                 <div class="map-item" onclick="toggleLayer('ss_craftmetal_Layer', this)">
-                    <div class="map-item-icon" style="background-image: url('img-pins/Craftmetal.png');"></div>
+                    <div class="map-item-icon" style="background-image: url('img-pins/ss-craft-icon.png');"></div>
                     <div class="map-item-name">Craftmetal</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="category-section">
+            <div class="category-title">Rosário & Conchas</div>
+            <div class="items-grid">
+                <div class="map-item" onclick="toggleLayer('ss_rosary_necklace_Layer', this)">
+                    <div class="map-item-icon" style="background-image: url('img-pins/ss-rosary-icon.png');"></div>
+                    <div class="map-item-name">Rosary Necklace</div>
+                </div>
+                <div class="map-item" onclick="toggleLayer('ss_rosary_string_Layer', this)">
+                    <div class="map-item-icon" style="background-image: url('img-pins/ss-string-icon.png');"></div>
+                    <div class="map-item-name">Rosary String</div>
+                </div>
+                <div class="map-item" onclick="toggleLayer('ss_shell_shards_Layer', this)">
+                    <div class="map-item-icon" style="background-image: url('img-pins/ss-shell-icon.png');"></div>
+                    <div class="map-item-name">Shell Shards</div>
                 </div>
             </div>
         </div>
@@ -186,11 +207,11 @@
             <div class="category-title">Pontos de Interesse</div>
             <div class="items-grid">
                 <div class="map-item" onclick="toggleLayer('ss_shop_Layer', this)">
-                    <div class="map-item-icon" style="background-image: url('img-pins/Token_Marker.webp');"></div>
+                    <div class="map-item-icon" style="background-image: url('img-pins/ss-shop-icon.png');"></div>
                     <div class="map-item-name">Lojas</div>
                 </div>
                 <div class="map-item" onclick="toggleLayer('ss_boss_Layer', this)">
-                    <div class="map-item-icon" style="background-image: url('img-pins/Grimm_Troupe.webp');"></div>
+                    <div class="map-item-icon" style="background-image: url('img-pins/ss-boss-icon.png');"></div>
                     <div class="map-item-name">Boss</div>
                 </div>
                 <div class="map-item" onclick="toggleLayer('ss_bench_Layer', this)">
@@ -235,14 +256,17 @@
         <div class="markers-layer map2-layer" id="ss_crest_Layer" style="display: none;"></div>
         <div class="markers-layer map2-layer" id="ss_bell_way_Layer" style="display: none;"></div>
         <div class="markers-layer map2-layer" id="ss_memory_locket_Layer" style="display: none;"></div>
+        <div class="markers-layer map2-layer" id="ss_spool_fragment_Layer" style="display: none;"></div>
         <div class="markers-layer map2-layer" id="ss_lost_flea_Layer" style="display: none;"></div>
         <div class="markers-layer map2-layer" id="ss_shard_bundle_Layer" style="display: none;"></div>
         <div class="markers-layer map2-layer" id="ss_wish_Layer" style="display: none;"></div>
         <div class="markers-layer map2-layer" id="ss_craftmetal_Layer" style="display: none;"></div>
+        <div class="markers-layer map2-layer" id="ss_rosary_necklace_Layer" style="display: none;"></div>
+        <div class="markers-layer map2-layer" id="ss_rosary_string_Layer" style="display: none;"></div>
+        <div class="markers-layer map2-layer" id="ss_shell_shards_Layer" style="display: none;"></div>
         <div class="markers-layer map2-layer" id="ss_shop_Layer" style="display: none;"></div>
         <div class="markers-layer map2-layer" id="ss_boss_Layer" style="display: none;"></div>
         <div class="markers-layer map2-layer" id="ss_bench_Layer" style="display: none;"></div>
-        <div class="markers-layer map2-layer" id="ss_mask_fragment_Layer" style="display: none;"></div>
     </div>
 </div>
 
