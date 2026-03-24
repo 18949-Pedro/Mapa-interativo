@@ -502,36 +502,18 @@ const ss_shardBundleMarkers = [
     {x: 880, y: 680, name: "Fragmento de Máscara 20"}
 ];
 
-// WISH - removido (não estava na lista)
-const ss_wishMarkers = [];
-
-// CRAFTMETAL - removido (não estava na lista)
-const ss_craftmetalMarkers = [];
-
-// ROSARY NECKLACE - removido (não estava na lista)
-const ss_rosaryNecklaceMarkers = [];
-
-// ROSARY STRING - removido (não estava na lista)
-const ss_rosaryStringMarkers = [];
-
-// SHELL SHARDS - removido (não estava na lista)
-const ss_shellShardsMarkers = [];
-
-// BOSS (Chefes)
 const ss_bossMarkers = [
     {x: 850, y: 650, name: "Boss 1"},
     {x: 900, y: 700, name: "Boss 2"},
     {x: 950, y: 750, name: "Boss 3"}
 ];
 
-// LOJAS (Shops)
 const ss_shopMarkers = [
     {x: 750, y: 550, name: "Loja 1"},
     {x: 850, y: 650, name: "Loja 2"},
     {x: 950, y: 750, name: "Loja 3"}
 ];
 
-// BANCOS (Benches - locais de descanso)
 const ss_benchMarkers = [
     {x: 600, y: 400, name: "Banco 1"},
     {x: 700, y: 500, name: "Banco 2"},
@@ -541,19 +523,6 @@ const ss_benchMarkers = [
 function criarMarcadores(lista, layerId, classe) {
     const layer = document.getElementById(layerId);
     
-    // Verificar se a lista existe e tem elementos
-    if (!lista || lista.length === 0) {
-        console.log(`⚠️ Lista vazia ou não definida para ${layerId}`);
-        return;
-    }
-    
-    // Verificar se a camada existe
-    if (!layer) {
-        console.warn(`❌ Layer ${layerId} não encontrada no HTML`);
-        return;
-    }
-    
-    console.log(`✅ Criando ${lista.length} marcadores para ${layerId}`);
 
     lista.forEach(item => {
         const marker = document.createElement("div");
@@ -596,12 +565,8 @@ criarMarcadores(ss_bellWayMarkers, "ss_bell_way_Layer", "ss_bell");
 criarMarcadores(ss_memoryLocketMarkers, "ss_memory_locket_Layer", "ss_memory");
 criarMarcadores(ss_spoolFragmentMarkers, "ss_spool_fragment_Layer", "ss_spool");
 criarMarcadores(ss_lostFleaMarkers, "ss_lost_flea_Layer", "ss_flea");
-criarMarcadores(ss_shardBundleMarkers, "ss_shard_bundle_Layer", "ss_shard");
 criarMarcadores(ss_wishMarkers, "ss_wish_Layer", "ss_wish");
 criarMarcadores(ss_craftmetalMarkers, "ss_craftmetal_Layer", "ss_craft");
-criarMarcadores(ss_rosaryNecklaceMarkers, "ss_rosary_necklace_Layer", "ss_rosary");
-criarMarcadores(ss_rosaryStringMarkers, "ss_rosary_string_Layer", "ss_string");
-criarMarcadores(ss_shellShardsMarkers, "ss_shell_shards_Layer", "ss_shell");
 criarMarcadores(ss_shopMarkers, "ss_shop_Layer", "ss_shop");
 criarMarcadores(ss_bossMarkers, "ss_boss_Layer", "ss_boss");
 criarMarcadores(ss_benchMarkers, "ss_bench_Layer", "bench");
